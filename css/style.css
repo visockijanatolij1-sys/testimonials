@@ -44,7 +44,12 @@ body{
 }
 .person-image {
     border-radius: 50%;
+}
+.white-border{
     border: 1px solid #fff;
+}
+.pink-border{
+    border: 1px solid hsl(264, 82%, 80%);
 }
 
 .person-name {
@@ -60,9 +65,25 @@ body{
     flex-direction: column;
     gap: 20px;
 }
+.card-content__daniel{
+    position: relative;
+
+}
+.card-content__daniel::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    background: url("../img/bg-pattern-quotation.svg") no-repeat center / cover;
+    right: 45px;
+    top: -80px;
+}
 .content-card__title {
     font-size: 22px;
     font-weight: 600;
+    position: relative;
+    z-index: 8;
 }
 .content-card__text {
     line-height: 1.2rem;
@@ -78,7 +99,19 @@ body{
 }
 .card-kira{
     grid-row: span 2;
+    background-color: hsl(0, 0%, 81%);
+    color: hsl(219, 29%, 14%);
 }
 .card-patrick{
     grid-column: span 2;
+    background-color: hsl(0, 0%, 7%);
+    color: hsl(214, 17%, 92%);
+}
+.card-jonathan{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(214, 17%, 92%);
+}
+.card-jeanette{
+    background-color: hsl(0, 0%, 81%);
+    color: hsl(219, 29%, 14%);
 }
