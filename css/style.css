@@ -115,3 +115,18 @@ body{
     background-color: hsl(0, 0%, 81%);
     color: hsl(219, 29%, 14%);
 }
+
+@media (max-width: 1024px) {
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+    .card-daniel,
+    .card-kira,
+    .card-patrick{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .card-content__daniel::before{
+        display: none;
+    }
+}
