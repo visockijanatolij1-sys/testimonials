@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: "Barlow Semi Condensed", sans-serif; 
+    font-size: 13px;
+}
+
+.wrapper{
+    background-color: hsl(0, 0%, 81%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+}
+.card{
+    box-shadow: 5px 25px 40px #686868;
+    padding: 20px;
+    border-radius: 12px;
+
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.person-image {
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.person-name {
+    font-size: 19px;
+}
+.person-graduate {
+    font-size: 16px;
+    margin-top: 5px;
+}
+.card-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.content-card__title {
+    font-size: 22px;
+    font-weight: 600;
+}
+.content-card__text {
+    line-height: 1.2rem;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.card-daniel{
+    grid-column: span 2;
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+    font-weight: 500;
+}
+.card-kira{
+    grid-row: span 2;
+}
+.card-patrick{
+    grid-column: span 2;
+}
